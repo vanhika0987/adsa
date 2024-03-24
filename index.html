@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcel Delivery Route Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <form id="deliveryForm">
+        <label for="warehouse">Warehouse Coordinates:</label>
+        <input type="text" id="warehouse" name="warehouse" placeholder="Enter warehouse coordinates (e.g., x,y)" required><br>
+        <label for="deliveryPoints">Delivery Points Coordinates:</label>
+        <textarea id="deliveryPoints" name="deliveryPoints" placeholder="Enter delivery points coordinates (one per line)" required></textarea><br>
+        <button type="submit">Calculate Route</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
