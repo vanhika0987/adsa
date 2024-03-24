@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcel Delivery Route Visualization</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div id="map"></div>
+    <canvas id="canvas" width="800" height="400"></canvas>
+
     <form id="deliveryForm">
         <label for="warehouse">Warehouse Coordinates:</label>
         <input type="text" id="warehouse" name="warehouse" placeholder="Enter warehouse coordinates (e.g., x,y)" required><br>
